@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css" type="css" />
+        <link rel="script" href="project.js" type="js"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="PlayD8 is an application that helps link parents and babies with other parents using match making abilities to find the perfect play date for kids and parents alike" />
+        <meta name="keywords" content="babies, play date app for babies, safe baby play pals, mom and baby app" />
+        <meta name="author" content="3JA Digitally" />
+        <title>PlayD8</title>
+    </head>
+    
+    <body>
+    <header>
+        <h1>PlayD8</h1>
+        <p>Make a sandbox friend.</p>
+    </header>
+    <main> 
+        <!-- Registration and Login Forms -->
+        <section id="registration">
+            <h2>Create Parent Account</h2>
+            <form id="parentregistrationform">
+                <label for="parentname">Parent's Name:</label>
+                <input type="text" id="parentName" name="parentName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="parentPicture">Upload Parent's Profile Picture:</label>
+                <input type="file" id="parentPicture" name="parentPicture" accept="image/*">
+    
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+    
+        <section id="login">
+            <h2>Parent Login</h2>
+            <form id="parentLoginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+    
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+    
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    
+        <!-- Baby Profile Management -->
+        <section id="babyProfile">
+            <h2>Baby's Profile</h2>
+            <form id="babyProfileForm">
+                <label for="babyName">Baby's Name:</label>
+                <input type="text" id="babyName" name="babyName" required>
+    
+                <label for="babyAge">Baby's Age (months):</label>
+                <input type="number" id="babyAge" name="babyAge" required>
+    
+                <label for="babyGender">Baby's Gender:</label>
+                <select id="babyGender" name="babyGender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="babyZodiac">Baby's Zodiac Sign:</label>
+                <input type="text" id="babyZodiac" name="babyZodiac" required>
+    
+                <label for="babyPreferences">Baby's Preferences:</label>
+                <textarea id="babyPreferences" name="babyPreferences"></textarea>
+
+                <label for="babyPicture">Upload Baby's Profile Picture:</label>
+                <input type="file" id="babyPicture" name="babyPicture" accept="image/*">
+
+    
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+    
+        <!-- Matchmaking Results -->
+        <section id="matchmakingResults">
+            <h2>Matchmaking Results</h2>
+            <!-- Results will be dynamically populated here based on criteria -->
+            <ul id="matchesList">
+                <!-- List of matched babies -->
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Play Date App. All rights reserved.</p>
+    </footer>
+    
+    </main>
+</html>
